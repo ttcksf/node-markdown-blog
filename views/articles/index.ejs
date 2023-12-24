@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <h1>変数などを出力するには=をつける</h1>
+    <h1><%= text %></h1>
+    <h1>タイトル</h1>
+    <a href="/articles/new">新規投稿</a>
+    <% text.forEach((article) => { %>
+      <div>
+        <%= article.title %>
+      </div>
+      <div>
+        <%= article.description %>
+      </div>
+    <% }) %>
+  </body>
+</html>
